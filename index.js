@@ -3,6 +3,8 @@ const bot = new Discord.Client();
  
 bot.on("ready", async () => {
     console.log("bot online");
+    console.log(bot.user.tag);
+    console.log(bot.user.id);
     bot.user.setActivity("a Kanye West music competition", { type: "COMPETING" });
 });
  
