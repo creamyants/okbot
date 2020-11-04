@@ -93,6 +93,10 @@ bot.on("message", async message => {
         send(helpEmbed);
  
     }
+
+    if(cmd === `${prefix}travis`){
+        send("scott");
+    }
 });
  
 bot.login(require(`./secret.json`).token);
